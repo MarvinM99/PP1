@@ -177,4 +177,4 @@ A share link to your solution goes here: <a href="https://circuitverse.org/users
 
 **Remember:** Stop working after 90 minutes and record where you stopped!
 
-Kommentar: Die Aufgaben waren gut sehr gut machbar und sind ein guter Schritt um Schaltungen und KV-Diagramme zu verstehen. Mir hat es offensichtlich aber auch sehr geholfen, dass ich DT1 und DT2 bereits gehört habe. Ich bin mit den 90 ziemlich genau ausgekommen.
+Kommentar: Die Aufgaben waren sehr gut machbar und sind ein guter Schritt, um Schaltungen und KV-Diagramme zu verstehen. Mir hat es dabei offensichtlich aber auch sehr geholfen, dass ich DT1 und DT2 bereits gehört habe. Ich bin mit den 90 Minuten ziemlich genau ausgekommen.
