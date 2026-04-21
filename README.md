@@ -67,19 +67,33 @@ When you have finished working, in Moodle, click "Add solution" and submit the l
 ### Task 1: Mapping Symbols to Binary
 Fill out the following table, mapping decimal numbers `0` through `15` to their binary representations:
 
-| Decimal | Binary Representation |
+| Decimal | Binary Representation  |
 |---------|------------------------|
 | 0       | 0000                   |
 | 1       | 0001                   |
-| ...     | ...                    |
-| 15      | ????                   |
+| 2       | 0010                   |
+| 3       | 0011                   |
+| 4       | 0100                   |
+| 5       | 0101                   |
+| 6       | 0110                   |
+| 7       | 0111                   |
+| 8       | 1000                   |
+| 9       | 1001                   |
+| 10      | 1010                   |
+| 11      | 1011                   |
+| 12      | 1100                   |
+| 13      | 1101                   |
+| 14      | 1110                   |
+| 15      | 1111                   |
 
 **How many binary digits (bits) are needed?**
 
 Explain how to calculate the number of bits required:
 <details>
 <summary>Your Answer</summary>
-Erase this text and write your answer here!
+To find out how many bits are needed to represent a decimal number, you can use a simple calculation. You take the base-2 logarithm of the decimal number +1 and round up the result to the next whole number. The +1 is needed because 0 has also to be included. 
+   Example for 42: log<sub>2</sub>(42+1) = 5,43
+   So you need at least 6 bits to show the number 42.
 </details>
 
 ---
@@ -107,13 +121,26 @@ Refer to the truth table of a 1-bit full adder:
 #### Your Task
 Create a truth table for a **2-bit adder** without carry-in. What are the possible inputs and outputs?
 
->   Your
->
->   table
->
->   goes
->
->   here!
+|  B<sub>1</sub>  |  B<sub>0</sub>  |  A<sub>1</sub>  |  A<sub>0</sub>  |  Sum1(S<sub>1</sub>)  |Sum0(S<sub>0</sub>)|  C<sub>out</sub>  | 
+|-----------------|-----------------|-----------------|-----------------|-----------------------|-------------------|-------------------|
+|0                |0                |0                |0                |0                      |0                  |0                  |
+|0                |0                |0                |1                |0                      |1                  |0                  |
+|0                |0                |1                |0                |1                      |0                  |0                  |
+|0                |0                |1                |1                |1                      |1                  |0                  |
+|0                |1                |0                |0                |0                      |1                  |0                  |
+|0                |1                |0                |1                |1                      |0                  |0                  |
+|0                |1                |1                |0                |1                      |1                  |0                  |
+|0                |1                |1                |1                |0                      |0                  |1                  |
+|1                |0                |0                |0                |1                      |0                  |0                  |
+|1                |0                |0                |1                |1                      |1                  |0                  |
+|1                |0                |1                |0                |0                      |0                  |1                  |
+|1                |0                |1                |1                |0                      |1                  |1                  |
+|1                |1                |0                |0                |1                      |1                  |0                  |
+|1                |1                |0                |1                |0                      |0                  |1                  |
+|1                |1                |1                |0                |0                      |1                  |1                  |
+|1                |1                |1                |1                |1                      |0                  |1                  |
+
+There are four possible inputs (B<sub>1</sub>,  B<sub>0</sub>,  A<sub>1</sub>,  A<sub>0</sub>) and three outputs(Sum1(S<sub>1</sub>), Sum0(S<sub>0</sub>), C<sub>out</sub>).
 
 ---
 
@@ -128,11 +155,11 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 <details>
 <summary>The final functions</summary>
 
-Q<sub>0</sub> = .......
+Q<sub>0</sub> = B0!A0v!B0A0
 
-Q<sub>1</sub> = .......
+Q<sub>1</sub> = B1!A1!A0vB1!B0!A1v!B1!B0A1v!B1A1!A0v!B1B0!A1A0vB1B0A1A0
 
-C<sub>out</sub> = .......
+C<sub>out</sub> = B1A1vB1B0A0vB0A1A0
 
 </details>
 
@@ -143,10 +170,11 @@ Using your Boolean equations, build a logic network in [CircuitVerse](https://ci
 
 <details>
 <summary>Your solution</summary>
-A share link to your solution goes here: <a href=".................">Link!</a>
+A share link to your solution goes here: <a href="https://circuitverse.org/users/423303/projects/pp1-melles">Link!</a>
 </details>
 
 ---
 
 **Remember:** Stop working after 90 minutes and record where you stopped!
 
+Kommentar: Die Aufgaben waren gut sehr gut machbar und sind ein guter Schritt um Schaltungen und KV-Diagramme zu verstehen. Mir hat es offensichtlich aber auch sehr geholfen, dass ich DT1 und DT2 bereits gehört habe. Ich bin mit den 90 ziemlich genau ausgekommen.
